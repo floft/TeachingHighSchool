@@ -1,4 +1,4 @@
-High School Math
+Teaching High School
 ================
 I taught high school math for the 2016/2017 school year. Here are files that
 may be of use if you do something similar.
