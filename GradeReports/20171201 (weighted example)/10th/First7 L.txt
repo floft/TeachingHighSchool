@@ -1,0 +1,35 @@
+Last, First7
+
+Tests/Quizzes                 56.8%                    
+    Test CH 1                 44.1/44.1                
+    Corrections               0.0/0.0                  
+    Test CH 2                 46.9/100.0               
+    Curve                     10.0/0.0                 
+    Corrections               0.0/0.0                  
+    Final Exam                37.8/100.0               
+Assignments                   72.6%                    
+    HW 1.1a                   10.0/10.0                
+    HW 1.1b                   8.2/10.0                 
+    HW 1.2b                   7.8/10.0                 
+    HW 1.3                    8.2/10.0                 
+    HW 1.4                    5.4/10.0                 
+    HW 1.5                    7.1/9.0                  
+    HW 1.6                    7.9/10.0                 
+    Test 1 EC                 0.0/0.0                  
+    HW 2.1                    8.1/10.0                 
+    HW 2.2                    0.0/10.0                 
+    HW 2.3                    7.1/10.0                 
+    HW 2.4                    8.6/10.0                 
+    HW 2.5                    8.6/10.0                 
+    HW 2.6                    2.9/10.0                 
+    HW 2.7                    2.9/10.0                 
+    Test 2 EC                 2.9/0.0                  
+    HW 3.1                    8.3/10.0                 
+    HW 3.2                    9.6/10.0                 
+    HW 3.3a                   9.3/10.0                 
+Participation                 77.1%                    
+
+Total: 65% = D
+
+Missing Work
+    HW 2.2: 3, 4, 8, 10, 12, 18, 20 (grade all/18; class)

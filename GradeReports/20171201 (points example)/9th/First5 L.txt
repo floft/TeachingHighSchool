@@ -1,0 +1,52 @@
+Last, First5
+
+    Bellwork                  0.0/2.0                  
+    Classwork                 2.0/2.0                  
+    HW 6.3                    0.0/10.0                 
+    Classwork                 0.0/2.0                  
+    Bellwork                  2.0/2.0                  
+    Classwork                 2.0/2.0                  
+    HW 6.4                    0.0/10.0                 
+    Notes                     2.0/2.0                  
+    Bellwork                  2.0/2.0                  
+    Classwork                 0.0/2.0                  
+    HW 6.5                    0.0/10.0                 
+    Classwork                 0.0/2.0                  
+    Classwork                 2.0/2.0                  
+    HW 6.6                    0.0/10.0                 
+    Test over 6.3-6.6 [returned 4/10] 21.0/60.0                
+    Notes                     9.0/10.0                 
+    CH 6 EC                   0.0/0.0                  
+    Bellwork & Classwork      2.0/4.0                  
+    Bellwork                  2.0/2.0                  
+    HW 7.1                    8.0/10.0                 
+    Bellwork                  2.0/2.0                  
+    Classwork                 1.0/2.0                  
+    HW 7.2                    3.0/10.0                 
+    Corrections               0.0/0.0                  
+    Classwork                 0.0/2.0                  
+    Bellwork                  2.0/2.0                  
+    HW 7.3                    0.0/10.0                 
+    Notes 7.4                 0.0/2.0                  
+    HW 7.4                    0.0/10.0                 
+    Bellwork                  0.0/2.0                  
+    Notes 7.5                 0.0/2.0                  
+    HW 7.5                    8.5/10.0                 
+    Test CH 7                 36.7/60.0                
+    CH 7 EC                   9.5/0.0                  
+
+Total: 45% = F
+
+Missing Work
+    HW 6.3: 6-8, 12-14, 19-21, 26
+    Classwork: p. 394 GP #2
+    HW 6.4: 6-8, 13-17
+    Classwork: p. 405 GP #3
+    HW 6.5: 5-8, 18-22, 26-28
+    Classwork: p. 394 GP #3, p. 404 GP #2
+    HW 6.6: 3-8, 16-20 (even), 24-30 (even)
+    Classwork: p. 451 GP #9
+    HW 7.3: 9-14, 21-26, 28-42 (even)
+    Notes 7.4
+    HW 7.4: 4, 6, 10-18 (even), 22-26 (even)
+    Notes 7.5

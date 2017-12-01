@@ -1,0 +1,30 @@
+Last, First8
+
+Tests/Quizzes                 68.4%                    
+    Quiz 1.1-1.3              12.0/21.0                
+    Corrections               4.5/0.0                  
+    Test CH 1                 37.1/100.0               
+    Curve                     20.0/0.0                 
+    Corrections               19.6/0.0                 
+    Quiz 2.2, 2.4             22.5/30.0                
+    Corrections               0.0/0.0                  
+    Final Exam                56.0/100.0               
+Assignments                   56.7%                    
+    HW 1.1a                   0.0/10.0                 
+    HW 1.1b                   9.4/10.0                 
+    HW 1.2                    6.0/8.0                  
+    HW 1.3a                   8.2/10.0                 
+    HW 1.3b                   6.1/8.0                  
+    HW 1.4a                   7.5/10.0                 
+    HW 1.4b                   3.0/10.0                 
+    HW 1.6                    0.0/10.0                 
+    Test 1 EC                 0.0/0.0                  
+    HW 2.2                    4.1/10.0                 
+    HW 2.4a                   5.8/10.0                 
+    HW 2.4b                   10.0/10.0                
+Participation                 100.0%                   
+
+Total: 67% = D
+
+Missing Work
+    HW 1.1a: 1c-e, 2, 4, 8, 16-17 (grade: 2, 8, 17)

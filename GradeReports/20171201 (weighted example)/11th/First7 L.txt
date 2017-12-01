@@ -1,0 +1,31 @@
+Last, First7
+
+Tests/Quizzes                 75.3%                    
+    Quiz 1.1-1.2              20.0/20.0                
+    Corrections               0.0/0.0                  
+    Test 1                    44.0/100.0               
+    Curve                     16.0/0.0                 
+    Instant Quiz              10.0/10.0                
+    Corrections               0.0/0.0                  
+    Quiz CH 2                 9.0/30.0                 
+    Corrections               0.0/0.0                  
+    Final Exam                96.7/100.0               
+Assignments                   69.3%                    
+    HW 1.1a                   0.0/10.0                 
+    HW 1.1b                   7.0/10.0                 
+    HW 1.2                    8.5/10.0                 
+    HW 1.3                    9.0/10.0                 
+    HW 1.4                    8.0/9.0                  
+    HW 1.5                    6.0/10.0                 
+    Test 1 Review             10.0/10.0                
+    Test 1 EC                 0.0/0.0                  
+    HW 1.6a                   10.0/10.0                
+    HW 1.6b                   6.0/10.0                 
+    HW 1.7                    5.0/10.0                 
+    HW 1.8                    6.0/10.0                 
+Participation                 80.8%                    
+
+Total: 73% = C
+
+Missing Work
+    None

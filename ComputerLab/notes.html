@@ -1,0 +1,838 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Computer Lab</title>
+	<meta name='Generator' content='Zim 0.67'>
+	<style type='text/css'>
+		a          { text-decoration: none      }
+		a:hover    { text-decoration: underline }
+		a:active   { text-decoration: underline }
+		strike     { color: grey                }
+		u          { text-decoration: none;
+					 background-color: yellow   }
+		tt         { color: #2e3436;            }
+		pre        { color: #2e3436;
+					 margin-left: 20px          }
+		h1         { text-decoration: underline;
+					 color: #4e9a06; margin-bottom: 0 }
+		h2         { color: #4e9a06; margin-bottom: 0 }
+		h3         { color: #4e9a06; margin-bottom: 0 }
+		h4         { color: #4e9a06; margin-bottom: 0 }
+		h5         { color: #4e9a06; margin-bottom: 0 }
+		p          { margin-top: 0              }
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		.migrated-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB+AKHREFA8vJSnkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAC1klEQVRIx+2VT0hUURTGf/e958w4Tc3TYowMw1GyEgwr1MqsFmbZIrIWQZsWJUjbdoHQpl3Qps0swnCRECQFYkR/TC1iKkqmfzAKTo2Vf8hoRsfR995tkRMT87RRWkUHHhy495zvnvvu933wP/75EKkkEAjIYDCIaZpIKRFCZN0kfX9xcTGtra2/irVUEolECIfDlJeXo+s6hmFkDaCqKoZhEAqFSCaTv60pqcSyLAoLC/F4PEtqDmCaJkIIKisrMybX0sdUVRWA5ubmPzdNjjI1cpXkZC/O1fV03PXgdDqRUtpPIITAsqxsDz0Z/3CZQv8uqo4N4C8/Tp2/DdM0MiZQlvk41OTkI/LW1SGtCVb5drD3eCc71wcA+VcAHA5vDd8+3UGakxiJV7i9pdQevU5T1R35pJ3MV5QW1pf+0kWBheJ2SWua8EQXZXsu4fVVYEz1sEKvof5EuxjoPvzpcRvrdp9C2gGMx6cpOHBmbImMesds7BZubwMVDTfXDnQ3vQfK7AC8wLfExMX5whyQc3q2OEnjGm5vE76SQxsfBLr77a7CNf+n0r/l6sSMtsBSnurckiIILCobAtVZhpF4gZF4jubaymj4Ch/fd380LE7bAnjc0NPxk2yqpmEuwGxF0ag+0k5uTpzZeBeaazvj0We8fXojainsb2xh2BZgbe0gSIllzSIUh63wfQ6dZ/O2fbjcKlOj58jJ3cVENESw5yErc9nf2MLQ4jwQAkV1Lqiq37/cZ9WaahJjF9AcmxiPDhLs7ePe23oOnmUwg2hSShQle96tKDjA2HAniusgo9FxnvY9Jxw7RWzGYy92QghM00x5g53qp9sHmtB58/o2umOI2NwGolMnMYUHIb7aAyiKwsjICLqu2/qBEIKUUAohMaSHSLyBSMoPTINQ6CX5+fn2AEVFRZSUlBCPx4nFYhl3L4RESjF/GEgX3pSj+Xw+/H7/b3U/AEOZFnp7O5+5AAAAAElFTkSuQmCC)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+	</style>
+</head>
+<body>
+
+<!-- Wiki content -->
+
+	<h1>Computer Lab</h1>
+
+<p>
+Created Monday 12 September 2016
+</p>
+
+<h2>Italc</h2>
+
+<br>
+
+<h4>Getting all the computer's hostnames and MAC addresses</h4>
+
+<p>
+<b>add_computer.bat (doesn't work... doesn't output MAC addresses)</b><br>
+hostname &gt;&gt; computer_lab.txt<br>
+for /f "tokens=3 delims," %a in ('"getmac /v /fo csv | findstr Local"') do echo %a &gt;&gt; computer_lab.txt
+</p>
+
+<p>
+<b>add_computer.bat (does work)</b><br>
+hostname &gt;&gt; computer_lab.txt<br>
+getmac /v /fo csv | findstr Local &gt;&gt; computer_lab.txt
+</p>
+
+<p>
+<b>Then convert with other script to make it in the right format... still can't turn on with WOL though</b>
+</p>
+
+<h4>Configuring iTALC</h4>
+
+<p>
+<ul>
+<li>Install on each computer.</li>
+<li>On the teacher's computer, open the manager. Go to the Authentication tab.
+<ul>
+<li>Uncheck ACL-based logon authentication</li>
+<li>Click Launch key file assistant
+<ul>
+<li>Create new access keys</li>
+<li>Teacher role</li>
+<li>Export public key part (to flash drive)</li>
+</ul></li>
+</ul>
+</li>
+<li>On each student computer, open the manager.
+<ul>
+<li>Uncheck ACL-based logon authentication</li>
+<li>Click Launch key file assistant
+<ul>
+<li>Import public key</li>
+<li>Teacher role</li>
+<li>Import the public key that you exported to your flash drive</li>
+</ul></li>
+</ul></li>
+</ul>
+</p>
+
+<h2>Installing Software Remotely / Unattended</h2>
+
+<p>
+Commands to install certain software:<br>
+<a href="http://www.itninja.com/software/browse/all/1/25?WithTips=1" title="http://www.itninja.com/software/browse/all/1/25?WithTips=1" class="http">http://www.itninja.com/software/browse/all/1/25?WithTips=1</a>
+</p>
+
+<h2>Software</h2>
+
+<p>
+<ul>
+<li class="checked-box"><b>VLC</b></li>
+</ul>
+<a href="http://www.videolan.org/vlc/download-windows.html" title="http://www.videolan.org/vlc/download-windows.html" class="http">http://www.videolan.org/vlc/download-windows.html</a><br>
+<a href="http://vlc.uberglobalmirror.com/vlc/2.2.4/win32/vlc-2.2.4-win32.exe" title="http://vlc.uberglobalmirror.com/vlc/2.2.4/win32/vlc-2.2.4-win32.exe" class="http">http://vlc.uberglobalmirror.com/vlc/2.2.4/win32/vlc-2.2.4-win32.exe</a><br>
+<a href="http://get.videolan.org/vlc/2.2.4/win64/vlc-2.2.4-win64.exe" title="http://get.videolan.org/vlc/2.2.4/win64/vlc-2.2.4-win64.exe" class="http">http://get.videolan.org/vlc/2.2.4/win64/vlc-2.2.4-win64.exe</a><br>
+(Note: Other guy installed it on the lab computers so I didn't have to, just on the other computers)
+</p>
+
+<p>
+Install:<br>
+vlc-2.2.4-win32.exe /L=1033 /S
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Anaconda (Python)</b></li>
+</ul>
+<a href="https://www.continuum.io/downloads" title="https://www.continuum.io/downloads" class="https">https://www.continuum.io/downloads</a><br>
+<a href="https://repo.continuum.io/archive/Anaconda3-4.1.1-Windows-x86_64.exe" title="https://repo.continuum.io/archive/Anaconda3-4.1.1-Windows-x86_64.exe" class="https">https://repo.continuum.io/archive/Anaconda3-4.1.1-Windows-x86_64.exe</a>
+</p>
+
+<p>
+Install (<a href="https://groups.google.com/a/continuum.io/forum/#!topic/anaconda/TpbJwwSJ0HU" title="discussion" class="https">discussion</a>):<br>
+Anaconda3-4.1.1-Windows-x86_64.exe /S /D=C:\Anaconda3 /InstallationType=AllUsers /AddToPath=1 /RegisterPython=1 /NoRegistry=0
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Blender</b></li>
+</ul>
+<a href="https://www.blender.org/download/" title="https://www.blender.org/download/" class="https">https://www.blender.org/download/</a><br>
+<a href="http://mirror.cs.umn.edu/blender.org/release/Blender2.77/blender-2.77a-windows64.msi" title="http://mirror.cs.umn.edu/blender.org/release/Blender2.77/blender-2.77a-windows64.msi" class="http">http://mirror.cs.umn.edu/blender.org/release/Blender2.77/blender-2.77a-windows64.msi</a>
+</p>
+
+<p>
+But, to install on these computers which apparently don't have OpenGL 2.1 or above support, we have to use 2.76 or below ("However, Blender 2.76 and earlier still supports Windows XP and OpenGL 1.4 graphics cards."):<br>
+<a href="http://download.blender.org/release/Blender2.76/" title="http://download.blender.org/release/Blender2.76/" class="http">http://download.blender.org/release/Blender2.76/</a><br>
+<a href="http://download.blender.org/release/Blender2.76/blender-2.76b-windows64.msi" title="http://download.blender.org/release/Blender2.76/blender-2.76b-windows64.msi" class="http">http://download.blender.org/release/Blender2.76/blender-2.76b-windows64.msi</a>
+</p>
+
+<p>
+Install:<br>
+msiexec /qb /l* blender.log.txt /i blender-2.77a-windows64.msi<br>
+msiexec /qb /l* blender.log.txt /i blender-2.76b-windows64.msi
+</p>
+
+<br>
+
+<p>
+<ul>
+<li class="checked-box"><b>GIMP</b></li>
+</ul>
+<a href="https://www.gimp.org/downloads/" title="https://www.gimp.org/downloads/" class="https">https://www.gimp.org/downloads/</a><br>
+<a href="https://download.gimp.org/mirror/pub/gimp/v2.8/windows/gimp-2.8.18-setup.exe" title="https://download.gimp.org/mirror/pub/gimp/v2.8/windows/gimp-2.8.18-setup.exe" class="https">https://download.gimp.org/mirror/pub/gimp/v2.8/windows/gimp-2.8.18-setup.exe</a>
+</p>
+
+<p>
+Install:<br>
+gimp-2.8.18-setup.exe /VERYSILENT /NORESTART
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Wireshark</b></li>
+</ul>
+<a href="https://www.wireshark.org/download.html" title="https://www.wireshark.org/download.html" class="https">https://www.wireshark.org/download.html</a><br>
+<a href="https://2.na.dl.wireshark.org/win64/Wireshark-win64-2.2.0.exe" title="https://2.na.dl.wireshark.org/win64/Wireshark-win64-2.2.0.exe" class="https">https://2.na.dl.wireshark.org/win64/Wireshark-win64-2.2.0.exe</a>
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Notepad++</b></li>
+</ul>
+<a href="https://notepad-plus-plus.org/download/v6.9.2.html" title="https://notepad-plus-plus.org/download/v6.9.2.html" class="https">https://notepad-plus-plus.org/download/v6.9.2.html</a><br>
+<a href="https://notepad-plus-plus.org/repository/6.x/6.9.2/npp.6.9.2.Installer.exe" title="https://notepad-plus-plus.org/repository/6.x/6.9.2/npp.6.9.2.Installer.exe" class="https">https://notepad-plus-plus.org/repository/6.x/6.9.2/npp.6.9.2.Installer.exe</a>
+</p>
+
+<p>
+Install:<br>
+npp.6.9.2.Installer.exe /S
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Programmer's Notepad</b></li>
+</ul>
+<a href="http://www.pnotepad.org/download/" title="http://www.pnotepad.org/download/" class="http">http://www.pnotepad.org/download/</a><br>
+<a href="https://github.com/simonsteele/pn/releases" title="https://github.com/simonsteele/pn/releases" class="https">https://github.com/simonsteele/pn/releases</a><br>
+<a href="https://github.com/simonsteele/pn/releases/download/v2.4/pn2402378_multilang.exe" title="https://github.com/simonsteele/pn/releases/download/v2.4/pn2402378_multilang.exe" class="https">https://github.com/simonsteele/pn/releases/download/v2.4/pn2402378_multilang.exe</a>
+</p>
+
+<p>
+Install:<br>
+pn2402378_multilang.exe /SILENT /DIR="%ProgramFiles%\Programmer's Notepad"
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Visual Studio Code</b></li>
+</ul>
+<a href="https://code.visualstudio.com/docs?dv=win" title="https://code.visualstudio.com/docs?dv=win" class="https">https://code.visualstudio.com/docs?dv=win</a>
+</p>
+
+<p>
+VSCodeSetup-stable.exe /VERYSILENT /NORESTART
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Typing software</b></li>
+</ul>
+<a href="https://www.tipp10.com/en/download/" title="https://www.tipp10.com/en/download/" class="https">https://www.tipp10.com/en/download/</a><br>
+<a href="https://www.tipp10.com/en/download/getfile/0/1474184488/" title="https://www.tipp10.com/en/download/getfile/0/1474184488/" class="https">https://www.tipp10.com/en/download/getfile/0/1474184488/</a> (tipp10_win_v2-1-0.exe)<br>
+<s>https://www.tipp10.com/en/download/getfile/0/1473847517/ (tipp10_win_v2-1-0.exe)</s>
+</p>
+
+<p>
+Install:<br>
+tipp10_win_v2-1-0.exe /VERYSILENT /NORESTART
+</p>
+
+<p>
+or<br>
+<a href="http://www.nchsoftware.com/typingtutor/" title="http://www.nchsoftware.com/typingtutor/" class="http">http://www.nchsoftware.com/typingtutor/</a><br>
+<a href="http://www.nchsoftware.com/typingtutor/kbsetup.exe" title="http://www.nchsoftware.com/typingtutor/kbsetup.exe" class="http">http://www.nchsoftware.com/typingtutor/kbsetup.exe</a>
+</p>
+
+<p>
+or<br>
+<a href="http://www.typingmaster.com/typing-tutor/free-download.html" title="http://www.typingmaster.com/typing-tutor/free-download.html" class="http">http://www.typingmaster.com/typing-tutor/free-download.html</a><br>
+<a href="http://download.typingmaster10.com/TypingMaster10Installer.exe" title="http://download.typingmaster10.com/TypingMaster10Installer.exe" class="http">http://download.typingmaster10.com/TypingMaster10Installer.exe</a>
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Windows 7 Service Pack 1</b></li>
+</ul>
+<a href="https://technet.microsoft.com/en-us/library/ff817622%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396" title="https://technet.microsoft.com/en-us/library/ff817622%28v=ws.10%29.aspx?f=255&amp;MSPPError=-2147217396" class="https">https://technet.microsoft.com/en-us/library/ff817622%28v=ws.10%29.aspx?f=255&amp;MSPPError=-2147217396</a><br>
+<a href="https://download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/windows6.1-KB976932-X64.exe" title="https://download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/windows6.1-KB976932-X64.exe" class="https">https://download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/windows6.1-KB976932-X64.exe</a><br>
+Command line switches: <a href="https://technet.microsoft.com/en-us/library/ff817650(v=ws.10).aspx#BKMK_scenario5" title="https://technet.microsoft.com/en-us/library/ff817650(v=ws.10).aspx#BKMK_scenario5" class="https">https://technet.microsoft.com/en-us/library/ff817650(v=ws.10).aspx#BKMK_scenario5</a>
+</p>
+
+<p>
+Install:<br>
+windows6.1-KB976932-X64.exe /unattend
+</p>
+
+<p>
+Note: the user profile will have changed. To get rid of it reconfiguring it every boot, update the profile by doing:<br>
+<ul>
+<li>Make the profile writable.</li>
+<li>Rename ntuser.man to ntuser.dat</li>
+<li>Login.</li>
+<li>Logout.</li>
+<li>Rename ntuser.dat to ntuser.man</li>
+<li>Make the profile read-only.</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Visual Studio 2015 Community </b>(note: requires Windows 7 SP1 apparently)</li>
+</ul>
+Download vs_community.exe from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48146" title="https://www.microsoft.com/en-us/download/details.aspx?id=48146" class="https">https://www.microsoft.com/en-us/download/details.aspx?id=48146</a><br>
+Run with vs_community.exe /layout and tell it where to download to<br>
+Copy the "Community 2015" folder to the server<br>
+Unattended install: <a href="https://msdn.microsoft.com/en-us/library/ee225237.aspx?f=255&MSPPError=-2147217396" title="https://msdn.microsoft.com/en-us/library/ee225237.aspx?f=255&amp;MSPPError=-2147217396" class="https">https://msdn.microsoft.com/en-us/library/ee225237.aspx?f=255&amp;MSPPError=-2147217396</a>
+</p>
+
+<p>
+<ul>
+<li>Everything
+<ul>
+<li>start /wait vs_community.exe /Full /NoWeb /NoRestart</li>
+</ul>
+</li>
+<li>Only part: using the normal vs_community_ENU.exe download rather than the one used for /layout (which will just crash if you do this)
+<ul>
+<li>start /wait vs_community_ENU.exe /createadminfile C:\Users\Garrett\Desktop\AdminDeployment.xml (note that without full path it will give a permission denied error)</li>
+<li>Customize to install the desired packages</li>
+<li>start /wait vs_community.exe /AdminFile "C:\Temp\AdminDeployment.xml" /Quiet /NoWeb /NoRestart</li>
+</ul>
+</li>
+<li>To uninstall
+<ul>
+<li>start /wait vs_community.exe /Uninstall /NoWeb /NoRestart</li>
+</ul>
+</li>
+<li>Also, at the end, must update the profile so certain errors aren't shown and so it won't ask about the coloring, etc. ever time you open it up after login</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li class="unchecked-box"><b>Avast</b></li>
+</ul>
+<a href="https://www.avast.com/download-thank-you.php?product=FAV-ONLINE&locale=en-ww" title="https://www.avast.com/download-thank-you.php?product=FAV-ONLINE&amp;locale=en-ww" class="https">https://www.avast.com/download-thank-you.php?product=FAV-ONLINE&amp;locale=en-ww</a><br>
+<a href="http://files.avast.com/iavs9x/avast_free_antivirus_setup_online.exe" title="http://files.avast.com/iavs9x/avast_free_antivirus_setup_online.exe" class="http">http://files.avast.com/iavs9x/avast_free_antivirus_setup_online.exe</a><br>
+Command line switches: <a href="http://help.avast.com/backup/en/winclient/reference/command_line_switches_i.html" title="http://help.avast.com/backup/en/winclient/reference/command_line_switches_i.html" class="http">http://help.avast.com/backup/en/winclient/reference/command_line_switches_i.html</a>
+</p>
+
+<p>
+<ul>
+<li class="unchecked-box"><b>Avira</b></li>
+</ul>
+<a href="https://www.avira.com/en/download/product/avira-free-antivirus" title="https://www.avira.com/en/download/product/avira-free-antivirus" class="https">https://www.avira.com/en/download/product/avira-free-antivirus</a><br>
+<a href="https://install.avira-update.com/package/antivirus/win/en-us/avira_antivirus_en-us.exe" title="https://install.avira-update.com/package/antivirus/win/en-us/avira_antivirus_en-us.exe" class="https">https://install.avira-update.com/package/antivirus/win/en-us/avira_antivirus_en-us.exe</a><br>
+Unattended install: <a href="http://www.msfn.org/board/topic/111891-how-can-i-make-avira-antivir-silent-install-what-is-switch/" title="http://www.msfn.org/board/topic/111891-how-can-i-make-avira-antivir-silent-install-what-is-switch/" class="http">http://www.msfn.org/board/topic/111891-how-can-i-make-avira-antivir-silent-install-what-is-switch/</a>
+</p>
+
+<p>
+Need AutoIt to do the unattended install:<br>
+<a href="https://www.autoitscript.com/site/autoit/downloads/" title="https://www.autoitscript.com/site/autoit/downloads/" class="https">https://www.autoitscript.com/site/autoit/downloads/</a><br>
+<a href="https://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3.zip" title="https://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3.zip" class="https">https://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3.zip</a>
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Sumatra PDF Reader</b></li>
+</ul>
+<a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer.html" title="https://www.sumatrapdfreader.org/download-free-pdf-viewer.html" class="https">https://www.sumatrapdfreader.org/download-free-pdf-viewer.html</a><br>
+Unattended install: <a href="https://wpkg.org/SumatraPDF" title="https://wpkg.org/SumatraPDF" class="https">https://wpkg.org/SumatraPDF</a><br>
+Command line: SumatraPDF-3.1.2-64-install.exe /s /register
+</p>
+
+<p>
+<ul>
+<li class="xchecked-box"><b>LMMS</b></li>
+</ul>
+<a href="https://lmms.io/download/#windows" title="https://lmms.io/download/#windows" class="https">https://lmms.io/download/#windows</a><br>
+<a href="https://github.com/LMMS/lmms/releases/download/v1.1.3/lmms-1.1.3-win64.exe" title="https://github.com/LMMS/lmms/releases/download/v1.1.3/lmms-1.1.3-win64.exe" class="https">https://github.com/LMMS/lmms/releases/download/v1.1.3/lmms-1.1.3-win64.exe</a><br>
+<a href="https://github.com/LMMS/lmms/releases/download/v1.1.90/lmms-1.1.90-win64.exe" title="https://github.com/LMMS/lmms/releases/download/v1.1.90/lmms-1.1.90-win64.exe" class="https">https://github.com/LMMS/lmms/releases/download/v1.1.90/lmms-1.1.90-win64.exe</a>
+</p>
+
+<p>
+Unattended Install: ... /S — doesn't work...
+</p>
+
+<p>
+<ul>
+<li class="checked-box"><b>Audacity</b></li>
+</ul>
+<a href="http://www.audacityteam.org/download/" title="http://www.audacityteam.org/download/" class="http">http://www.audacityteam.org/download/</a><br>
+<a href="https://www.fosshub.com/Audacity.html/audacity-win-2.1.2.exe" title="https://www.fosshub.com/Audacity.html/audacity-win-2.1.2.exe" class="https">https://www.fosshub.com/Audacity.html/audacity-win-2.1.2.exe</a><br>
+<a href="https://www.fosshub.com/Audacity.html/LADSPA_plugins-win-0.4.15.exe" title="https://www.fosshub.com/Audacity.html/LADSPA_plugins-win-0.4.15.exe" class="https">https://www.fosshub.com/Audacity.html/LADSPA_plugins-win-0.4.15.exe</a>
+</p>
+
+<p>
+MP3 and ffmpeg:<br>
+<a href="http://lame.buanzo.org/#lamewindl" title="http://lame.buanzo.org/#lamewindl" class="http">http://lame.buanzo.org/#lamewindl</a><br>
+<a href="http://lame.buanzo.org/Lame_v3.99.3_for_Windows.exe" title="http://lame.buanzo.org/Lame_v3.99.3_for_Windows.exe" class="http">http://lame.buanzo.org/Lame_v3.99.3_for_Windows.exe</a><br>
+<a href="http://lame3.buanzo.com.ar/ffmpeg-win-2.2.2.exe" title="http://lame3.buanzo.com.ar/ffmpeg-win-2.2.2.exe" class="http">http://lame3.buanzo.com.ar/ffmpeg-win-2.2.2.exe</a>
+</p>
+
+<p>
+Unattended Install: something like: start /wait audacity-win-2.0.5.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /MERGETASKS="!desktopicon"
+</p>
+
+<p>
+<ul>
+<li class="checked-box">Firefox</li>
+</ul>
+<a href="https://www.mozilla.org/en-US/firefox/all/" title="https://www.mozilla.org/en-US/firefox/all/" class="https">https://www.mozilla.org/en-US/firefox/all/</a><br>
+<a href="https://download.mozilla.org/?product=firefox-51.0.1-SSL&os=win64&lang=en-US" title="https://download.mozilla.org/?product=firefox-51.0.1-SSL&amp;os=win64&amp;lang=en-US" class="https">https://download.mozilla.org/?product=firefox-51.0.1-SSL&amp;os=win64&amp;lang=en-US</a>
+</p>
+
+<p>
+Unattended install: <i>start /wait FirefoxSetup3.6.10.exe -ms</i>
+</p>
+
+<p>
+<ul>
+<li class="unchecked-box">Robocode</li>
+</ul>
+<a href="http://robocode.sourceforge.net/" title="http://robocode.sourceforge.net/" class="http">http://robocode.sourceforge.net/</a>
+</p>
+
+<p>
+<ul>
+<li class="xchecked-box">Syncthing</li>
+</ul>
+<a href="https://github.com/syncthing/syncthing/releases/tag/v0.14.27" title="https://github.com/syncthing/syncthing/releases/tag/v0.14.27" class="https">https://github.com/syncthing/syncthing/releases/tag/v0.14.27</a><br>
+<a href="https://github.com/syncthing/syncthing/releases/download/v0.14.27/syncthing-windows-amd64-v0.14.27.zip" title="https://github.com/syncthing/syncthing/releases/download/v0.14.27/syncthing-windows-amd64-v0.14.27.zip" class="https">https://github.com/syncthing/syncthing/releases/download/v0.14.27/syncthing-windows-amd64-v0.14.27.zip</a>
+</p>
+
+<p>
+<a href="https://github.com/canton7/SyncTrayzor/releases/tag/v1.1.15" title="https://github.com/canton7/SyncTrayzor/releases/tag/v1.1.15" class="https">https://github.com/canton7/SyncTrayzor/releases/tag/v1.1.15</a><br>
+<a href="https://github.com/canton7/SyncTrayzor/releases/download/v1.1.15/SyncTrayzorSetup-x64.exe" title="https://github.com/canton7/SyncTrayzor/releases/download/v1.1.15/SyncTrayzorSetup-x64.exe" class="https">https://github.com/canton7/SyncTrayzor/releases/download/v1.1.15/SyncTrayzorSetup-x64.exe</a>
+</p>
+
+<p>
+<a href="https://github.com/syncthing/syncthing-gtk/releases/tag/v0.9.2.4" title="https://github.com/syncthing/syncthing-gtk/releases/tag/v0.9.2.4" class="https">https://github.com/syncthing/syncthing-gtk/releases/tag/v0.9.2.4</a><br>
+<a href="https://github.com/syncthing/syncthing-gtk/releases/download/v0.9.2.4/SyncthingGTK-v0.9.2.4-win32-full-installer.exe" title="https://github.com/syncthing/syncthing-gtk/releases/download/v0.9.2.4/SyncthingGTK-v0.9.2.4-win32-full-installer.exe" class="https">https://github.com/syncthing/syncthing-gtk/releases/download/v0.9.2.4/SyncthingGTK-v0.9.2.4-win32-full-installer.exe</a>
+</p>
+
+<p>
+<ul>
+<li class="xchecked-box">Seafile</li>
+</ul>
+<a href="https://www.seafile.com/en/download/" title="https://www.seafile.com/en/download/" class="https">https://www.seafile.com/en/download/</a><br>
+<a href="https://bintray.com/artifact/download/seafile-org/seafile/seafile-server_6.0.7_win32.tar.gz" title="https://bintray.com/artifact/download/seafile-org/seafile/seafile-server_6.0.7_win32.tar.gz" class="https">https://bintray.com/artifact/download/seafile-org/seafile/seafile-server_6.0.7_win32.tar.gz</a>
+</p>
+
+<p>
+Drive:<br>
+<a href="https://bintray.com/artifact/download/seafile-org/seafile/seadrive-0.6.2.exe" title="https://bintray.com/artifact/download/seafile-org/seafile/seadrive-0.6.2.exe" class="https">https://bintray.com/artifact/download/seafile-org/seafile/seadrive-0.6.2.exe</a><br>
+Requires for Win7: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=46148" title="https://www.microsoft.com/en-us/download/details.aspx?id=46148" class="https">https://www.microsoft.com/en-us/download/details.aspx?id=46148</a> — <a href="https://download.microsoft.com/download/C/8/7/C87AE67E-A228-48FB-8F02-B2A9A1238099/Windows6.1-KB3033929-x64.msu" title="https://download.microsoft.com/download/C/8/7/C87AE67E-A228-48FB-8F02-B2A9A1238099/Windows6.1-KB3033929-x64.msu" class="https">https://download.microsoft.com/download/C/8/7/C87AE67E-A228-48FB-8F02-B2A9A1238099/Windows6.1-KB3033929-x64.msu</a>
+</p>
+
+<p>
+<ul>
+<li class="xchecked-box">ProjectSend</li>
+</ul>
+<a href="http://www.projectsend.org/" title="http://www.projectsend.org/" class="http">http://www.projectsend.org/</a><br>
+<a href="http://www.projectsend.org/download/140/" title="http://www.projectsend.org/download/140/" class="http">http://www.projectsend.org/download/140/</a>
+</p>
+
+<p>
+<ul>
+<li class="checked-box">Pydio</li>
+</ul>
+<a href="https://pydio.com/" title="https://pydio.com/" class="https">https://pydio.com/</a><br>
+<a href="https://download.pydio.com/pub/core/archives/pydio-core-7.0.4.zip" title="https://download.pydio.com/pub/core/archives/pydio-core-7.0.4.zip" class="https">https://download.pydio.com/pub/core/archives/pydio-core-7.0.4.zip</a>
+</p>
+
+<p>
+Booster? a server?<br>
+<a href="https://pydio.com/en/pydio-booster-app" title="https://pydio.com/en/pydio-booster-app" class="https">https://pydio.com/en/pydio-booster-app</a><br>
+<a href="https://download.pydio.com/pub/booster/release/1.0.2/windows_amd64/pydio.exe" title="https://download.pydio.com/pub/booster/release/1.0.2/windows_amd64/pydio.exe" class="https">https://download.pydio.com/pub/booster/release/1.0.2/windows_amd64/pydio.exe</a>
+</p>
+
+<p>
+Desktop app<br>
+<a href="https://download.pydio.com/pub/pydio-sync/release/1.2.9/PydioSync-Windows-Setup-v1.2.9.msi" title="https://download.pydio.com/pub/pydio-sync/release/1.2.9/PydioSync-Windows-Setup-v1.2.9.msi" class="https">https://download.pydio.com/pub/pydio-sync/release/1.2.9/PydioSync-Windows-Setup-v1.2.9.msi</a>
+</p>
+
+<p>
+Phpmyadmin for WAMP: <a href="http://localhost/phpmyadmin" title="http://localhost/phpmyadmin" class="http">http://localhost/phpmyadmin</a> (user: root, password; <i>blank</i>)<br>
+Database: pydio
+</p>
+
+<p>
+To fix no users showing up, in the pydio/conf/bootstrap_conf.php file, uncomment:<br>
+define("AJXP_LOCALE", "en_EN.UTF-8");
+</p>
+
+<p>
+Create the user accounts for a class:<br>
+<ul>
+<li>||| (top right) → Settings → People → Create Group: 2017 Computers 12th</li>
+<li>Double click on the group</li>
+<li>Create User → username is "firstname" for instance, password is "password" and then click on "Force password change" so that the first time they login they have to change the password</li>
+</ul>
+</p>
+
+<p>
+Allow sharing with groups:<br>
+Settings → Application Core → Configuration Management → Allow Group listing
+</p>
+
+<h2>Batch Install</h2>
+
+<p>
+<ul>
+<li>Download all the programs you want to install.</li>
+<li>Figure out how to have an unattended install, writing a batch script (see above).</li>
+<li>Copy all the files and the batch script to the server.</li>
+<li>Share the directory you put them in as \\server\Software\, making sure that both the NTFS permissions allows Everyone to read and the Share permissions as well.</li>
+<li>Create a GPO that sets the startup script as the network path to your shared batch script (and whatever other settings you want, e.g. not sleeping, auto login registry tweaks, etc.)</li>
+<li>Using iTALC, run "gpupdate /force" on all the machines. Then reboot them all.</li>
+<li>On boot it should run the script.</li>
+</ul>
+</p>
+
+<h2>Group Policy Objects</h2>
+
+<p>
+<b>Teacher Computer</b><br>
+<ul>
+<li>Create a group "Teacher Computer" and add YAPSDA16 (the computer in the front) to it</li>
+<li>Disable auto login, setting the AutoAdminLogon registry setting to 0 and DefaultDomainName, DefaultPassword, and DefaultUserName to blank</li>
+<li>To make sure it'll work even without a network connection: Computer Configuration\Administrative Templates\System\Logon\Always wait for the network at computer startup and logon — disable (<a href="https://social.technet.microsoft.com/Forums/windowsserver/en-US/bc1a5667-776d-4451-96ce-43047cc794a5/windows-7-roaming-mandatory-profiles-and-caching?forum=winserverGP" title="link" class="https">link</a>)</li>
+</ul>
+</p>
+
+<p>
+<b>Allowed Applications</b><br>
+<ul>
+<li>User configuration, applied only to the student account: Software Restriction Policy
+<ul>
+<li>Default security level: Disallowed</li>
+<li>Additional rules
+<ul>
+<li>%HKEY... ProgramFiles (C:\Program Files)</li>
+<li>%HKEY... SystemRoot (C:\Windows)</li>
+<li>C:\Anaconda3</li>
+<li>C:\Program Files (x86)\</li>
+<li>C:\ProgramData\Microsot\Windows\Start Menu\Programs (start menu shortcuts, since .lnk is an executable)</li>
+<li>C:\Users\Public\Desktop (desktop shortcuts)</li>
+<li>\\server.yapsda.org\</li>
+</ul></li>
+</ul>
+</li>
+<li><s>On shutdown: \\server.yapsda.org\Software\Scripts\clean_profile.bat</s> Skip since it kills the student account if you run it and on shutdown does nothing due to the system restore probably</li>
+<li>User Configuration → Policies → Administrative Templates → Windows Components → Windows Explorer → Do not move deleted files to the Recycle Bin (otherwise students can delete and then restore from recycle bin)</li>
+<li>Note that disabling the Run and Entire Network under Start Menu admin templates for the user policy blocks the students from accessing the server share which I put their files on before we had flash drives.</li>
+<li><s>To make sure they use the mandatory profile: Computer Configuration\Administrative Templates\System\Logon\Always wait for the network at computer startup and logon — enable</s> (<a href="https://social.technet.microsoft.com/Forums/windowsserver/en-US/bc1a5667-776d-4451-96ce-43047cc794a5/windows-7-roaming-mandatory-profiles-and-caching?forum=winserverGP" title="link" class="https">link</a>)</li>
+<li>To make sure they can't play Gadget games: Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Sidebar\Turn Off Windows Sidebar — enable (<a href="http://trekker.net/archives/disable-windows-gadgets-with-group-policy/" title="link" class="http">link</a>)</li>
+<li>To make it so the C:\Users\Public can't be written to (i.e. Lilly and others can't hide her files in the public documents, pictures, etc. folders): Computer Configuration \ Policies \ Windows Settings \ Security Settings \ File System → Add File... → C:\Users\Public → add Authenticated Users and deny write access (setting allow won't change anything) (<a href="https://community.spiceworks.com/topic/312409-gpo-to-change-permissions-users-can-t-even-change-desktop-icons-w-o-elevation" title="link" class="https">link</a>) &amp; in install.bat robocopy the Public from the server so if we add more shortcuts or anything they'll be added too</li>
+</ul>
+</p>
+
+<p>
+<b>Blank Software Restriction Policy</b><br>
+<ul>
+<li>An attempt to have the NameLogFile registry setting to see what software is being run. Didn't appear do anything.</li>
+</ul>
+</p>
+
+<p>
+<b>Batch Install</b><br>
+<ul>
+<li>Create the AutoAdminLogon (1), DefaultDomainName (yapsda.org), DefaultPassword (PutPasswordHere), and DefaultUserName (student) settings to auto login to the student account</li>
+<li>Run the \\server.yapsda.org\Software\Scripts\install.bat file on boot</li>
+<li>Disable sleep (setting it to 2^32-1) and locking on sleep</li>
+</ul>
+</p>
+
+<p>
+<b>System Restore</b><br>
+<ul>
+<li>Runs script to do system restore on shutdown</li>
+<li>\\server.yapsda.org\Software\Scripts\system_restore.vbs</li>
+</ul>
+</p>
+
+<p>
+<b>Create System Restore</b><br>
+<ul>
+<li>Create a new system restore point on boot</li>
+<li>\\server.yapsda.org\Software\Scripts\create_system_restore.bat</li>
+</ul>
+</p>
+
+<p>
+<b>Disable Password Age</b><br>
+Computer Configuration → Policies → Windows Settings → Security Settings -&gt; Account Policies → Password Policy:<br>
+Maximum password age: 365 days<br>
+Minimum password age: 1 days
+</p>
+
+<p>
+<b>Default Domain Controllers Policy</b><br>
+<b>Default Domain Policy</b>
+</p>
+
+<h2>System Restore Script</h2>
+
+<p>
+cmd.exe /k "wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "20160920Lab", 100, 7"<br>
+wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "20160920Lab", 100, 12
+</p>
+
+<p>
+Use:<br>
+wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "20160920Lab", 100, 7
+</p>
+
+<p>
+Not sure what the last number means? Maybe that's the number that we can use to restore to this point.
+</p>
+
+<p>
+<a href="http://www.windowscentral.com/how-create-system-restore-point-windows-10-simple-double-click" title="http://www.windowscentral.com/how-create-system-restore-point-windows-10-simple-double-click" class="http">http://www.windowscentral.com/how-create-system-restore-point-windows-10-simple-double-click</a><br>
+<a href="http://www.winhelponline.com/blog/create-system-restore-point-script-windows-10-8-7-vista-xp/" title="http://www.winhelponline.com/blog/create-system-restore-point-script-windows-10-8-7-vista-xp/" class="http">http://www.winhelponline.com/blog/create-system-restore-point-script-windows-10-8-7-vista-xp/</a>
+</p>
+
+<p>
+<a href="http://windowsxp.mvps.org/ListSR.htm" title="http://windowsxp.mvps.org/ListSR.htm" class="http">http://windowsxp.mvps.org/ListSR.htm</a> — get all the restore points, get the number of the one with a particular description<br>
+<a href="https://gallery.technet.microsoft.com/scriptcenter/44eae6c2-1be0-4e50-89cd-848bee2ec19e" title="https://gallery.technet.microsoft.com/scriptcenter/44eae6c2-1be0-4e50-89cd-848bee2ec19e" class="https">https://gallery.technet.microsoft.com/scriptcenter/44eae6c2-1be0-4e50-89cd-848bee2ec19e</a> — restore to a particular number
+</p>
+
+<p>
+<b>Clear profile</b><br>
+<a href="https://mstoneblog.wordpress.com/2010/12/08/user-profile-cleaning-script-for-windows-7/" title="https://mstoneblog.wordpress.com/2010/12/08/user-profile-cleaning-script-for-windows-7/" class="https">https://mstoneblog.wordpress.com/2010/12/08/user-profile-cleaning-script-for-windows-7/</a>
+</p>
+
+<p>
+Made Student a member of Guest so it would have a temporary profile:<br>
+<a href="https://support.microsoft.com/en-us/kb/940453" title="https://support.microsoft.com/en-us/kb/940453" class="https">https://support.microsoft.com/en-us/kb/940453</a>
+</p>
+
+<h2>Process to update system restore point</h2>
+
+<p>
+<ul>
+<li>Edit create_system_restore.bat changing the "20160921Lab" name</li>
+<li>Edit system_restore.bat changing the "20160921Lab" name</li>
+<li>Disable the System Restore GPO</li>
+<li>Enable the Create System Restore GPO</li>
+<li>Run gpupdate on all the computers with iTALC</li>
+<li>Reboot everything</li>
+<li>Enable the System Restore GPO</li>
+<li>Disable the Create System Restore GPO</li>
+<li>Run gpupdate on all the computers with iTALC</li>
+<li>Reboot everything</li>
+</ul>
+</p>
+
+<h2>Creating a Mandatory Profile</h2>
+
+<p>
+<ul>
+<li>Computer → Properties → Advanced → Profile Settings → [Default] → Copy To \\server.yapsda.org\Profiles\student</li>
+<li>Change NTFS and Sharing permissions to allow Authenticated Users full control</li>
+<li>Do a gpupdate and login on one computer. It'll do "Preparing your desktop..." for a while copying files to the server.</li>
+<li>Rename ntuser.dat to ntuser.man to make it a mandatory profile</li>
+<li>Change NTFS and Sharing permissions to be only readable by Authenticated Users</li>
+</ul>
+</p>
+
+<p>
+Syncing mandatory profile to the computers to make them not have to copy it every boot (in install.bat):<br>
+robocopy \\server.yapsda.org\Profiles\student.V2 C:\Users\defaultstudent.V2 /MIR /SEC<br>
+change permissions (or else it won't use the profile): icacls C:\Users\defaultstudent.V2 /T /setowner "yapsda.org/student" (<a href="https://social.technet.microsoft.com/Forums/en-US/645ac8cb-6049-4f1f-a1f7-36d5044970c2/robocopy-fails-to-maintain-ownership-of-files?forum=winserver8gen" title="link" class="https">link</a>)
+</p>
+
+<p>
+Under Active Directory Users and Computers → SDA → Yap SDA Student → Profile → Profile path:<br>
+<ul>
+<li>instead of \\server.yapsda.org\Profiles\student change it to C:\Users\defaultstudent (note you don't include the .V2 part)</li>
+</ul>
+</p>
+
+<p>
+<a href="https://serverfault.com/questions/343613/can-you-use-a-local-path-for-mandatory-profiles" title="https://serverfault.com/questions/343613/can-you-use-a-local-path-for-mandatory-profiles" class="https">https://serverfault.com/questions/343613/can-you-use-a-local-path-for-mandatory-profiles</a>
+</p>
+
+<h2>To Fix Computers Not Booting</h2>
+
+<p>
+Sometimes 4, 7, and 14 won't boot. Pull out the memory and stick it back in. That's what worked at Sunset Lake. Apparently that's what works here too. Maybe it has something to do with memory going bad or maybe just shipping computers.
+</p>
+
+<h2>Updating Background Image (or set other things like settings in a program)</h2>
+
+<p>
+<b>If you really need to change the profile (something other than the background image):</b><br>
+<ul>
+<li>Set back to network profile: Under Active Directory Users and Computers → SDA → Yap SDA Student → Profile → Profile path: \\server.yapsda.org\Profiles\student</li>
+<li>Set the path to the image in: Allowed Applications → Edit → User Configuration → Policies → Administrative Templates → Desktop → Desktop → Desktop Wallpaper</li>
+<li>Logoff one student account user.</li>
+<li>Give full control to Authenticated Users in NTFS <i>and</i> Sharing permissions of \\server\Profiles\ folder.</li>
+<li>Rename ntuser.man to ntuser.dat.</li>
+<li>Login on student account.</li>
+<li>gpupdate /force</li>
+<li>Logout.</li>
+<li>Login to make sure it changed the background.</li>
+<li>Logout again (to upload your changes to the server).</li>
+<li>Rename ntuser.dat to ntuser.man.</li>
+<li>Give read-only permissions to Authenticated Users in NTFS and Sharing permissions of \\server\Profiles\ folder.</li>
+<li>Set back to synced profile: Under Active Directory Users and Computers → SDA → Yap SDA Student → Profile → Profile path: C:\Users\defaultstudent</li>
+<li>gpupdate /force</li>
+<li>Reboot once (to sync changes)</li>
+</ul>
+</p>
+
+<p>
+<b>If you just want to change the background image:</b><br>
+Update background.jpg in Profiles\student.V2\Pictures (which is synced to C:\Users\defaultstudent.V2\Pictures\background.jpg on each of the computers
+</p>
+
+<h2>Switching Server Computer (didn't work)</h2>
+
+<p>
+Download RTL8168 network driver:<br>
+<a href="http://www.realtek.com.tw/downloads/downloadsView.aspx?Langid=1&PNid=5&PFid=5&Level=5&Conn=4&DownTypeID=3&GetDown=false" title="http://www.realtek.com.tw/downloads/downloadsView.aspx?Langid=1&amp;PNid=5&amp;PFid=5&amp;Level=5&amp;Conn=4&amp;DownTypeID=3&amp;GetDown=false" class="http">http://www.realtek.com.tw/downloads/downloadsView.aspx?Langid=1&amp;PNid=5&amp;PFid=5&amp;Level=5&amp;Conn=4&amp;DownTypeID=3&amp;GetDown=false</a><br>
+<a href="http://12244.wpc.azureedge.net/8012244/drivers/rtdrivers/cn/nic/0015-Install_Win7_7103_12202016.zip" title="http://12244.wpc.azureedge.net/8012244/drivers/rtdrivers/cn/nic/0015-Install_Win7_7103_12202016.zip" class="http">http://12244.wpc.azureedge.net/8012244/drivers/rtdrivers/cn/nic/0015-Install_Win7_7103_12202016.zip</a>
+</p>
+
+<p>
+Apparently already installed? Cannot start?
+</p>
+
+<p>
+embedded broadcome netxtreme 5721 driver<br>
+<a href="http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=04VK6" title="http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=04VK6" class="http">http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=04VK6</a><br>
+<a href="https://downloads.dell.com/network/R116101.EXE" title="https://downloads.dell.com/network/R116101.EXE" class="https">https://downloads.dell.com/network/R116101.EXE</a>
+</p>
+
+<p>
+Optiplex 380<br>
+<a href="http://www.dell.com/support/home/us/en/04/product-support/servicetag/28BYML1" title="http://www.dell.com/support/home/us/en/04/product-support/servicetag/28BYML1" class="http">http://www.dell.com/support/home/us/en/04/product-support/servicetag/28BYML1</a><br>
+<a href="http://www.dell.com/support/home/us/en/04/product-support/servicetag/28BYML1/drivers" title="http://www.dell.com/support/home/us/en/04/product-support/servicetag/28BYML1/drivers" class="http">http://www.dell.com/support/home/us/en/04/product-support/servicetag/28BYML1/drivers</a>
+</p>
+
+<p>
+Still no network...
+</p>
+
+<p>
+Uninstalled all that stuff, put the server down on the ground, and it still didn't connect to the network. I had to reset the IP to be manually 192.168.1.103 and manually start the DNS server after that. Then the other computers could connect to it.
+</p>
+
+<p>
+Video driver for amd radeon hd 6450:<br>
+<a href="http://support.amd.com/en-us/download" title="http://support.amd.com/en-us/download" class="http">http://support.amd.com/en-us/download</a><br>
+<a href="http://support.amd.com/en-us/download/desktop/legacy?product=legacy3&os=Windows+7+-+64" title="http://support.amd.com/en-us/download/desktop/legacy?product=legacy3&amp;os=Windows+7+-+64" class="http">http://support.amd.com/en-us/download/desktop/legacy?product=legacy3&amp;os=Windows+7+-+64</a><br>
+<a href="https://www2.ati.com/drivers/amd-catalyst-15.7.1-with-dotnet45-win7-64bit.exe" title="https://www2.ati.com/drivers/amd-catalyst-15.7.1-with-dotnet45-win7-64bit.exe" class="https">https://www2.ati.com/drivers/amd-catalyst-15.7.1-with-dotnet45-win7-64bit.exe</a> (but requires above as the referer to download)
+</p>
+
+<p>
+for Ms. Sue's computer (Windows 10):<br>
+<a href="http://support.amd.com/en-us/download/desktop/legacy?product=legacy3&os=Windows+10+-+32" title="http://support.amd.com/en-us/download/desktop/legacy?product=legacy3&amp;os=Windows+10+-+32" class="http">http://support.amd.com/en-us/download/desktop/legacy?product=legacy3&amp;os=Windows+10+-+32</a>
+</p>
+
+<h2>Deploying Windows</h2>
+
+<p>
+Switching from 192.168.1.x to 10.0.0.x:<br>
+<ul>
+<li>Change the static IPv4 settings for the server (IP 10.0.0.103, Mask 255.255.255.0, Gateway 10.0.0.1, DNS 10.0.0.103). Press okay and everything.</li>
+<li>Under DHCP create a different scope with the new IP ranges, making sure that 10.0.0.103 isn't in the assigned range. Copy all settings from the other scope (manually looking through)</li>
+<li>Under DNS change the yapsda.org _msdcs IP address to be 10.0.0.103</li>
+</ul>
+</p>
+
+<p>
+Note you'll have to activate Windows somehow.
+</p>
+
+<h4>Steps to deploy</h4>
+
+<p>
+<ul>
+<li>Copy the "To Install" directory from the server's Documents\Software\ to your flash drive (or go to \\server\Software to find the files when you need them later)</li>
+<li>Plug the computer into the switch with the server connected, powered on, and running Windows Deployment Services</li>
+<li>If you're locked out of the BIOS due to it being password protected, remove the PSWD pin on the Optiplex 380 computers (or probably something similar on the other computers)</li>
+<li>Enable PXE booting in the BIOS (different for every computer; note on the acer computers: you have to enable LAN Option ROM under Integrated Peripherals to get PXE booting to show up under the boot menu)</li>
+<li>Reboot, press F12, select PXE boot</li>
+<li>Windows will boot. Select "My language is English"</li>
+<li>Select to install Windows 7 Professional (or the customized image with Office and everything else preinstalled) and then on whatever partition you want (probably the second, largest one if there are two listed)</li>
+<li>When it asks for a license key, uncheck the box that says activate with Internet, click Next without typing in a license key.</li>
+<li>It'll ask for a username and password. User: sda, Password: <i>InsertPasswordHere</i>, Hint: ask the admin. If it says "sda" already exists, then just create sda2 or something. This account was already added to the image.</li>
+<li>Set the timezone to whatever (Pacific is the default)</li>
+<li>When it finally logs in, it'll come up with the student account and ask for what type of network this is. Click "Home."</li>
+<li>Logout and login as the teacher</li>
+<li>Activate Windows</li>
+<li>Wait for all the applications to download and install (if you didn't install the customized image). Visual Studio will take a long time. Note that it's also installing Windows 7 SP1, so it'll reboot. Just leave it up until it reboots and finishes installing SP1.</li>
+<li>If this is one for the lab, go look at the "Configuring iTALC" on this page. Uncheck "master" when installing. (If you didn't use the customized image)</li>
+</ul>
+</p>
+
+<p>
+<b>Custom Install?</b><br>
+<a href="https://technet.microsoft.com/en-us/library/jj648426(v=ws.11).aspx#BKMK_CreateCustomInstall" title="https://technet.microsoft.com/en-us/library/jj648426(v=ws.11).aspx#BKMK_CreateCustomInstall" class="https">https://technet.microsoft.com/en-us/library/jj648426(v=ws.11).aspx#BKMK_CreateCustomInstall</a>
+</p>
+
+<h4>Optiplex 380</h4>
+
+<p>
+Optiplex computers, if the BIOS is password protected, remove the PSWD pin while boot.<br>
+<a href="http://www.tech-faq.com/reset-dell-bios-password.html" title="http://www.tech-faq.com/reset-dell-bios-password.html" class="http">http://www.tech-faq.com/reset-dell-bios-password.html</a>
+</p>
+
+<p>
+Network Driver:<br>
+<a href="http://www.dell.com/support/home/us/en/04/product-support/product/optiplex-380/drivers" title="http://www.dell.com/support/home/us/en/04/product-support/product/optiplex-380/drivers" class="http">http://www.dell.com/support/home/us/en/04/product-support/product/optiplex-380/drivers</a><br>
+<a href="https://downloads.dell.com/network/NIC_DRVR_WIN_R296613.EXE" title="https://downloads.dell.com/network/NIC_DRVR_WIN_R296613.EXE" class="https">https://downloads.dell.com/network/NIC_DRVR_WIN_R296613.EXE</a>
+</p>
+
+<p>
+<s>Download ImageX to edit the WIM image:</s><br>
+<a href="https://support.microsoft.com/en-us/hotfix/kbhotfix?kbnum=2525084&kbln=en-us" title="https://support.microsoft.com/en-us/hotfix/kbhotfix?kbnum=2525084&amp;kbln=en-us" class="https">https://support.microsoft.com/en-us/hotfix/kbhotfix?kbnum=2525084&amp;kbln=en-us</a><br>
+<a href="http://hotfixv4.microsoft.com/Windows" title="http://hotfixv4.microsoft.com/Windows" class="http">http://hotfixv4.microsoft.com/Windows</a> 7/Windows Server2008 R2 SP1/sp2/Fix363073/7600/free/430546_intl_x64_zip.exe<br>
+<a href="http://hotfixv4.microsoft.com/Windows" title="http://hotfixv4.microsoft.com/Windows" class="http">http://hotfixv4.microsoft.com/Windows</a> 7/Windows Server2008 R2 SP1/sp2/Fix363073/7600/free/430544_intl_i386_zip.exe
+</p>
+
+<p>
+<s>imagex /apply c:\users\administrator\desktop\capture\boot.wim 1 c:\winpe_x86\mount\</s><br>
+<s>imagex /capture c: c:\users\administrator\desktop\capture\boot_altered.wim "Windows 7 Setup - Optiplex 380"</s>
+</p>
+
+<p>
+How to deploy with network driver:<br>
+<a href="http://www.edugeek.net/forums/o-s-deployment/54846-deploying-windows-7-dell-optiplex-380-a.html" title="http://www.edugeek.net/forums/o-s-deployment/54846-deploying-windows-7-dell-optiplex-380-a.html" class="http">http://www.edugeek.net/forums/o-s-deployment/54846-deploying-windows-7-dell-optiplex-380-a.html</a><br>
+<a href="https://technet.microsoft.com/en-us/library/cc749350%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396" title="https://technet.microsoft.com/en-us/library/cc749350%28v=ws.10%29.aspx?f=255&amp;MSPPError=-2147217396" class="https">https://technet.microsoft.com/en-us/library/cc749350%28v=ws.10%29.aspx?f=255&amp;MSPPError=-2147217396</a>
+</p>
+
+<p>
+<b>Steps</b><br>
+Since the server isn't 2008 R2, we don't have dism on there and it doesn't support right click add driver to image. So, copy the boot.wim to a flash drive, go to one of the other computers. Then use the "dism" command to update the image with the driver.<br>
+<a href="https://technet.microsoft.com/en-us/library/hh825070.aspx?f=255&MSPPError=-2147217396" title="https://technet.microsoft.com/en-us/library/hh825070.aspx?f=255&amp;MSPPError=-2147217396" class="https">https://technet.microsoft.com/en-us/library/hh825070.aspx?f=255&amp;MSPPError=-2147217396</a>
+</p>
+
+<p>
+Note: if you use index 1, it won't work. Must be index 2.<br>
+See <a href="https://community.spiceworks.com/topic/367784-dell-optiplex-380-won-t-detect-network-driver" title="https://community.spiceworks.com/topic/367784-dell-optiplex-380-won-t-detect-network-driver" class="https">https://community.spiceworks.com/topic/367784-dell-optiplex-380-won-t-detect-network-driver</a>
+</p>
+
+<p>
+mkdir mount<br>
+dism /Mount-Wim /WimFile:boot.wim /index:2 /MountDir:mount<br>
+dism /Image:mount /?<br>
+dism /Image:mount /Add-Driver /Driver:D:\Optiplex380NICDriver\Windows7-x64 /Recurse<br>
+dism /Image:mount /Add-Driver /Driver:D:\Optiplex380NICDriver\Windows7-x86 /Recurse<br>
+dism /Image:mount /Get-Drivers<br>
+dism /Unmount-Wim /MountDir:mount /commit
+</p>
+
+<p>
+Workaround to make it boot: <a href="https://social.technet.microsoft.com/Forums/office/en-US/201dabc5-fdc5-46ee-9fd9-0bf63fff9647/wds-and-server-2008-boot-configuration-data-file-does-not-contain-a-valid-os-entry?forum=itprovistadeployment" title="https://social.technet.microsoft.com/Forums/office/en-US/201dabc5-fdc5-46ee-9fd9-0bf63fff9647/wds-and-server-2008-boot-configuration-data-file-does-not-contain-a-valid-os-entry?forum=itprovistadeployment" class="https">https://social.technet.microsoft.com/Forums/office/en-US/201dabc5-fdc5-46ee-9fd9-0bf63fff9647/wds-and-server-2008-boot-configuration-data-file-does-not-contain-a-valid-os-entry?forum=itprovistadeployment</a>
+</p>
+
+<p>
+Go to D:\RemoteInstall\Boot\x64\Images\ and backup the boot.wim file. Then replace it with the new boot_optiplex380.wim file. Otherwise it'll error on boot.
+</p>
+
+<p>
+Note: still errors. Try what the guy said in <a href="http://www.edugeek.net/forums/o-s-deployment/54846-deploying-windows-7-dell-optiplex-380-a.html" title="http://www.edugeek.net/forums/o-s-deployment/54846-deploying-windows-7-dell-optiplex-380-a.html" class="http">http://www.edugeek.net/forums/o-s-deployment/54846-deploying-windows-7-dell-optiplex-380-a.html</a> about adding the newer drivers?
+</p>
+
+
+<!-- End wiki content -->
+
+</body>
+
+</html>

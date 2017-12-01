@@ -1,0 +1,34 @@
+Last, First5
+
+Tests/Quizzes                 65.9%                    
+    Test CH 1 Redo            81.2/100.0               
+    Corrections               7.9/0.0                  
+    Final Exam                42.7/100.0               
+Assignments                   69.2%                    
+    HW 1.1a                   5.0/9.0                  
+    HW 1.1b                   8.0/10.0                 
+    HW 1.2                    8.2/10.0                 
+    HW 1.3                    10.0/10.0                
+    HW 1.3b                   7.0/10.0                 
+    HW 1.4                    6.5/7.0                  
+    HW 1.5                    0.0/7.0                  
+    HW 1.5a                   0.0/7.0                  
+    HW 1.5b                   7.0/7.0                  
+    Test 1 EC                 0.0/0.0                  
+    HW 2.1                    3.0/10.0                 
+    Saxon 33-34               3.0/10.0                 
+    Saxon 39-40               8.0/10.0                 
+    Saxon 41-42               9.8/10.0                 
+    Saxon 35,43               8.0/10.0                 
+    Test 1 Corrections        5.0/10.0                 
+    Saxon 63                  10.0/10.0                
+    Saxon 79                  6.0/10.0                 
+    Saxon 85                  8.0/10.0                 
+    Saxon 91                  10.0/10.0                
+Participation                 85.7%                    
+
+Total: 69% = D+
+
+Missing Work
+    HW 1.5: 14, 20, 22, 32, 34, 36 (grade all; 2-pt; 15m)
+    HW 1.5a: 14, 20, 22 (grade all/6; class)

@@ -1,0 +1,41 @@
+Last, First8
+
+    Bellwork                  2.0/2.0                  
+    Classwork                 2.0/2.0                  
+    HW 6.3                    7.0/10.0                 
+    Classwork                 2.0/2.0                  
+    Bellwork                  2.0/2.0                  
+    Classwork                 2.0/2.0                  
+    HW 6.4                    10.0/10.0                
+    Notes                     2.0/2.0                  
+    Bellwork                  2.0/2.0                  
+    Classwork                 2.0/2.0                  
+    HW 6.5                    9.5/10.0                 
+    Classwork                 2.0/2.0                  
+    Classwork                 2.0/2.0                  
+    HW 6.6                    10.0/10.0                
+    Test over 6.3-6.6 [returned 4/10] 21.0/60.0                
+    Notes                     10.0/10.0                
+    CH 6 EC                   0.0/0.0                  
+    Bellwork & Classwork      4.0/4.0                  
+    Bellwork                  2.0/2.0                  
+    HW 7.1                    10.0/10.0                
+    Bellwork                  2.0/2.0                  
+    Classwork                 2.0/2.0                  
+    HW 7.2                    10.0/10.0                
+    Corrections               9.8/0.0                  
+    Classwork                 2.0/2.0                  
+    Bellwork                  2.0/2.0                  
+    HW 7.3                    10.0/10.0                
+    Notes 7.4                 2.0/2.0                  
+    HW 7.4                    6.0/10.0                 
+    Bellwork                  2.0/2.0                  
+    Notes 7.5                 2.0/2.0                  
+    HW 7.5                    9.5/10.0                 
+    Test CH 7                 36.7/60.0                
+    CH 7 EC                   1.5/0.0                  
+
+Total: 77% = C
+
+Missing Work
+    None
